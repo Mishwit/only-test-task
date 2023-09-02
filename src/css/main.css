@@ -1,0 +1,100 @@
+.main__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+  overflow: hidden;
+}
+
+img {
+  width: 100vw;
+}
+
+.button_blue {
+  background-color: var(--COLOR_BLUE);
+}
+
+.button_green {
+  background-color: var(--COLOR_GREEN);
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  color: #ffff;
+  font-size: 20px;
+}
+
+.button:nth-child(1) {
+  top: 19vw;
+  left: 30vw;
+}
+
+.button:nth-child(2) {
+  bottom: 36vw;
+  left: 22vw;
+}
+
+.button:nth-child(3) {
+  bottom: 41vw;
+  left: 56vw;
+}
+
+.button:nth-child(4) {
+  top: 16vw;
+  right: 26vw;
+}
+
+.button:nth-child(5) {
+  bottom: 49vw;
+  right: 23vw;
+}
+
+.button:nth-child(6) {
+  bottom: 36vw;
+  right: 14vw;
+}
+
+.button:nth-child(7) {
+  bottom: 39vw;
+  right: 29vw;
+}
+
+.button:nth-child(8) {
+  bottom: 32vw;
+  right: 40vw;
+}
+
+.button:nth-child(9) {
+  bottom: 52vw;
+  right: 38vw;
+}
+
+.button:nth-child(10) {
+  bottom: 48vw;
+  right: 62vw;
+}
+
+.button_active {
+  padding: 11px 15px;
+  width: auto;
+  height: auto;
+  border-radius: 40px;
+  gap: 15px;
+}
+
+.button .symbol {
+  font-size: 20px;
+}
+
+.button__text {
+  font-size: 14px;
+}
