@@ -11,90 +11,102 @@ img {
   width: 100vw;
 }
 
-.button_blue {
+.marker_blue {
   background-color: var(--COLOR_BLUE);
 }
 
-.button_green {
+.marker_green {
   background-color: var(--COLOR_GREEN);
 }
 
-.button {
+.marker {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   height: 40px;
-  width: 40px;
+  min-width: 40px;
   border-radius: 50%;
   border: none;
   color: #ffff;
   font-size: 20px;
+  user-select: none;
+  transition: 0.2s;
 }
 
-.button:nth-child(1) {
-  top: 19vw;
+.marker_active {
+  border-radius: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.marker_blue:hover {
+  background-color: var(--COLOR_HOVER_BLUE);
+}
+
+.marker_green:hover {
+  background-color: var(--COLOR_HOVER_GREEN);
+}
+
+.marker .details {
+  display: none;
+}
+
+.marker_active .short {
+  display: none;
+}
+
+.marker_active .details {
+  display: inline;
+}
+
+.marker:nth-child(1) {
+  bottom: 58vw;
   left: 30vw;
 }
 
-.button:nth-child(2) {
+.marker:nth-child(2) {
   bottom: 36vw;
-  left: 22vw;
+  left: 23vw;
 }
 
-.button:nth-child(3) {
+.marker:nth-child(3) {
   bottom: 41vw;
   left: 56vw;
 }
 
-.button:nth-child(4) {
-  top: 16vw;
-  right: 26vw;
+.marker:nth-child(4) {
+  bottom: 62vw;
+  left: 70vw;
 }
 
-.button:nth-child(5) {
+.marker:nth-child(5) {
   bottom: 49vw;
-  right: 23vw;
+  left: 73vw;
 }
 
-.button:nth-child(6) {
+.marker:nth-child(6) {
   bottom: 36vw;
-  right: 14vw;
+  left: 82vw;
 }
 
-.button:nth-child(7) {
+.marker:nth-child(7) {
   bottom: 39vw;
-  right: 29vw;
+  left: 67vw;
 }
 
-.button:nth-child(8) {
+.marker:nth-child(8) {
   bottom: 32vw;
-  right: 40vw;
+  left: 57vw;
 }
 
-.button:nth-child(9) {
+.marker:nth-child(9) {
   bottom: 52vw;
-  right: 38vw;
+  left: 59vw;
 }
 
-.button:nth-child(10) {
+.marker:nth-child(10) {
   bottom: 48vw;
-  right: 62vw;
-}
-
-.button_active {
-  padding: 11px 15px;
-  width: auto;
-  height: auto;
-  border-radius: 40px;
-  gap: 15px;
-}
-
-.button .symbol {
-  font-size: 20px;
-}
-
-.button__text {
-  font-size: 14px;
+  left: 35vw;
 }

@@ -1,6 +1,8 @@
 :root {
   --COLOR_BLUE: #3877ee;
   --COLOR_GREEN: #6abf4b;
+  --COLOR_HOVER_BLUE: #015aff;
+  --COLOR_HOVER_GREEN: #5dcf34;
 }
 
 body {

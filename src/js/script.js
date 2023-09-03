@@ -1,16 +1,21 @@
-const buttons = document.querySelectorAll(".button");
-const buttonText = buttons.textContent;
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const isButtonActive = button.classList.contains("button_active");
+const buttons = document.querySelectorAll(".marker");
 
-    if (isButtonActive) {
-      button.textContent = "+";
-    } else {
-      button.textContent = "- Стадион";
-    }
+buttons.forEach((button, currentIndex) => {
+  button.addEventListener("click", (event) => {
+    buttons.forEach((button, index) => {
+      if (currentIndex === index) {
+        button.classList.toggle("marker_active");
+      } else {
+        button.classList.remove("marker_active");
+      }
+    });
 
-    button.classList.toggle("button_active");
-    span.classList.toggle("text_visible");
+    event.stopPropagation();
+  });
+});
+
+document.addEventListener("click", () => {
+  buttons.forEach((button) => {
+    button.classList.remove("marker_active");
   });
 });
