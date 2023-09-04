@@ -1,0 +1,112 @@
+.main__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+  overflow: hidden;
+}
+
+img {
+  width: 100vw;
+}
+
+.marker_blue {
+  background-color: var(--COLOR_BLUE);
+}
+
+.marker_green {
+  background-color: var(--COLOR_GREEN);
+}
+
+.marker {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  border: none;
+  color: #ffff;
+  font-size: 20px;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.marker_active {
+  border-radius: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.marker_blue:hover {
+  background-color: var(--COLOR_HOVER_BLUE);
+}
+
+.marker_green:hover {
+  background-color: var(--COLOR_HOVER_GREEN);
+}
+
+.marker .details {
+  display: none;
+}
+
+.marker_active .short {
+  display: none;
+}
+
+.marker_active .details {
+  display: inline;
+}
+
+.marker:nth-child(1) {
+  bottom: 58vw;
+  left: 30vw;
+}
+
+.marker:nth-child(2) {
+  bottom: 36vw;
+  left: 23vw;
+}
+
+.marker:nth-child(3) {
+  bottom: 41vw;
+  left: 56vw;
+}
+
+.marker:nth-child(4) {
+  bottom: 62vw;
+  left: 70vw;
+}
+
+.marker:nth-child(5) {
+  bottom: 49vw;
+  left: 73vw;
+}
+
+.marker:nth-child(6) {
+  bottom: 36vw;
+  left: 82vw;
+}
+
+.marker:nth-child(7) {
+  bottom: 39vw;
+  left: 67vw;
+}
+
+.marker:nth-child(8) {
+  bottom: 32vw;
+  left: 57vw;
+}
+
+.marker:nth-child(9) {
+  bottom: 52vw;
+  left: 59vw;
+}
+
+.marker:nth-child(10) {
+  bottom: 48vw;
+  left: 35vw;
+}
